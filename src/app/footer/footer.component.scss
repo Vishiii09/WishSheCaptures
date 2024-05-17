@@ -1,0 +1,24 @@
+.footer {
+  white-space: nowrap; /* Prevents wrapping */
+  background-color: rgb(243, 240, 240);
+  height: 100px;
+  width: 100%; /* Ensures the footer spans the full width */
+  position: fixed; /* Fixes the footer at the bottom of the viewport */
+  bottom: 10px; /* Positions the footer at the bottom */
+  left: 0; /* Aligns the footer to the left */
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: space-between; /* Distributes space between elements */
+  align-items: center; /* Vertically aligns items */
+  padding: 0 20px; /* Adds padding to the sides */
+  box-sizing: border-box; /* Ensures padding is included in the height/width */
+  z-index: 1000; /* Ensures the footer stays on top of other elements */
+}
+
+.data {
+  font-family: fantasy;
+  font-size: 10px;
+  color: black;
+  margin: 22px 0 0 60px;
+  letter-spacing: 2px;
+  margin-left: 1000px;
+}

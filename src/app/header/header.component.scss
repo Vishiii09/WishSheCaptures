@@ -1,0 +1,78 @@
+.header {
+  white-space: nowrap; /* Prevents wrapping */
+  background-color: rgb(243, 240, 240);
+  height: 100px;
+  width: 100%;
+}
+
+.header > * {
+  display: inline-block; /* Display all child elements in one line */
+  margin-right: 10px; /* Add spacing between elements if needed */
+}
+
+.header > :last-child {
+  margin-right: 0; /* Remove margin from the last child element */
+  position: absolute;
+  right: 100px;
+  top: 40px;
+}
+
+.heading {
+  font-family: fantasy;
+  font-size: 30px;
+  color: black;
+  margin: 23px 0 0 60px;
+  letter-spacing: 2px;
+}
+
+.contact,
+.about {
+  display: inline-block;
+  padding-right: 30px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.dropbtn {
+  color: black;
+  padding: 16px;
+  padding-right: 30px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  letter-spacing: 2px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content.show {
+  display: block;
+}

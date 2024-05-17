@@ -1,0 +1,28 @@
+<header>
+  <div class="header">
+    <h1 class="heading">VISHI SHARMA PHOTOGRAPHY</h1>
+    <div>
+      <div class="dropdown">
+        <!-- Event Binding -->
+        <button class="dropbtn" (click)="toggleDropdown($event)">
+          CATEGORIES
+        </button>
+        <div
+          id="myDropdown"
+          class="dropdown-content"
+          [class.show]="isDropdownOpen"
+        >
+          <a routerLink="#portrait">PORTRAIT</a>
+          <a href="#about">NATURE</a>
+          <a href="#contact">STREET</a>
+          <a href="#contact">FOOD</a>
+          <a href="#contact"> BLACK & WHITE</a>
+        </div>
+      </div>
+      <a class="contact" href="/src/app/contact/contact.component.html"
+        >CONTACT</a
+      >
+      <a class="about"><img src="" alt="" /></a>
+    </div>
+  </div>
+</header>
