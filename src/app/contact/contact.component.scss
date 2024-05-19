@@ -1,0 +1,77 @@
+.modal {
+  position: center;
+  height: 500px;
+  width: 50%;
+  position: relative;
+  margin: 30px 30px 30px 30px;
+  margin-left: 500px;
+}
+
+.header {
+  height: 50px;
+}
+
+// .footer {
+//   position: absolute;
+//   right: 20px;
+//   bottom: 30px;
+// }
+
+.send {
+  margin-right: 10px;
+}
+
+.submit,
+.close {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #012b55;
+  height: 40px;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-family: bjpg;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.contact-form {
+  height: 400px;
+  margin: 100px 100px 100px 100px;
+}
+
+.form-input {
+  margin-bottom: 30px;
+}
+
+.input {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.header {
+  text-align: center;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 70%;
+  margin-bottom: 5px;
+  margin-left: 100px;
+  height: 40px;
+}
+
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 1px;
+  right: 110px;
+}
+
+.footer .submit,
+.footer .close {
+  padding: 10px 20px;
+}

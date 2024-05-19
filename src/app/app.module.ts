@@ -13,6 +13,7 @@ import { BlackWhiteComponent } from './black-white/black-white.component';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
 import { RoutingModule } from './routing/routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { RoutingModule } from './routing/routing.module';
     BlackWhiteComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, RoutingModule, ReactiveFormsModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

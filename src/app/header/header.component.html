@@ -1,9 +1,8 @@
 <header>
   <div class="header">
-    <h1 class="heading">VISHI SHARMA PHOTOGRAPHY</h1>
+    <h1 class="heading" routerLink="/">VISHI SHARMA PHOTOGRAPHY</h1>
     <div>
       <div class="dropdown">
-        <!-- Event Binding -->
         <button class="dropbtn" (click)="toggleDropdown($event)">
           CATEGORIES
         </button>
@@ -19,9 +18,8 @@
           <a href="#contact"> BLACK & WHITE</a>
         </div>
       </div>
-      <a class="contact" href="/src/app/contact/contact.component.html"
-        >CONTACT</a
-      >
+
+      <a class="contact" routerLink="/Contact">CONTACT</a>
       <a class="about"><img src="" alt="" /></a>
     </div>
   </div>
