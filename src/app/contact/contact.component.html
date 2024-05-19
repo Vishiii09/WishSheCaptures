@@ -9,22 +9,62 @@
       landscapes, portraits.
     </p>
   </div>
-  <div class="contact-form">
-    <div class="form-input">
-      <label for="name">Name *</label>
-      <input type="text" placeholder="Your Name.." />
+  <form [formGroup]="contactForm">
+    <div class="contact-form">
+      <div class="form-input">
+        <label for="name">Name *</label>
+        <input
+          type="text"
+          placeholder="Your Name.."
+          formControlName="name"
+          [ngClass]="{
+            'error-border':
+              contactForm.controls['name'].touched &&
+              contactForm.controls['name'].errors?.required
+          }"
+        />
+        <div class="text-danger" *ngIf="contactForm.controls['name'].touched">
+          <span>Name is required.</span>
+        </div>
+      </div>
+      <div class="form-input">
+        <label for="email">Email *</label>
+        <input
+          type="text"
+          placeholder="Your Email.."
+          formControlName="email"
+          [ngClass]="{
+            'error-border':
+              contactForm.controls['email'].touched &&
+              contactForm.controls['email'].errors?.required
+          }"
+        />
+        <div class="text-danger" *ngIf="contactForm.controls['email'].touched">
+          <span>Email is required.</span>
+        </div>
+      </div>
+      <div class="form-input">
+        <label for="message">Message *</label>
+        <textarea
+          placeholder="Your Message.."
+          formControlName="message"
+          [ngClass]="{
+            'error-border':
+              contactForm.controls['message'].touched &&
+              contactForm.controls['message'].errors?.required
+          }"
+        ></textarea>
+        <div
+          class="text-danger"
+          *ngIf="contactForm.controls['message'].touched"
+        >
+          <span>Message is required.</span>
+        </div>
+      </div>
     </div>
-    <div class="form-input">
-      <label for="email">Email *</label>
-      <input type="text" placeholder="Your Email.." />
-    </div>
-    <div class="form-input">
-      <label for="message">Message *</label>
-      <textarea placeholder="Your Message.."></textarea>
-    </div>
-  </div>
+  </form>
   <div class="footer">
-    <button class="submit">Submit</button>
+    <button class="submit" (click)="(submitForm)">Submit</button>
     <button class="close" (click)="close()">close</button>
   </div>
 </div>
