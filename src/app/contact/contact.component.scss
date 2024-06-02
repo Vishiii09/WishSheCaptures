@@ -1,24 +1,16 @@
 .modal {
   position: center;
-  height: 500px;
+  height: 600px;
   width: 50%;
   position: relative;
   margin: 30px 30px 30px 30px;
   margin-left: 500px;
+  background-color: rgb(243, 240, 240);
+  border-radius: 1%;
 }
 
 .header {
   height: 50px;
-}
-
-// .footer {
-//   position: absolute;
-//   right: 20px;
-//   bottom: 30px;
-// }
-
-.send {
-  margin-right: 10px;
 }
 
 .submit,
@@ -42,7 +34,7 @@
 }
 
 .form-input {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .input {
@@ -67,13 +59,14 @@
 .footer {
   display: flex;
   position: absolute;
-  bottom: 1px;
-  right: 110px;
+  bottom: 20px;
+  right: 250px;
 }
 
 .footer .submit,
 .footer .close {
   padding: 10px 20px;
+  margin-right: 10px;
 }
 
 .text-danger {
@@ -84,4 +77,14 @@
 
 .error-border {
   border: 1px solid red;
+}
+
+h1 {
+  padding-top: 10px;
+}
+
+textarea {
+  max-height: 200px;
+  overflow-y: auto;
+  resize: none;
 }

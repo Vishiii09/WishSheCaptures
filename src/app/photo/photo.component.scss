@@ -1,0 +1,13 @@
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-item {
+  margin: 10px;
+}
+
+.photo-item img {
+  max-width: 200px;
+  height: auto;
+}

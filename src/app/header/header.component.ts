@@ -1,17 +1,27 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import {
+  Component,
+  HostListener,
+  OnInit,
+  Output,
+  EventEmitter,
+} from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  @Output() contactModalStatus = new EventEmitter<boolean>();
+  openContact: boolean = false;
   isDropdownOpen = false;
-  constructor() {}
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
   toggleDropdown(event: Event): void {
-    event.stopPropagation(); // Prevent click from propagating to the document listener
+    event.stopPropagation();
     this.isDropdownOpen = !this.isDropdownOpen;
   }
 
@@ -25,5 +35,11 @@ export class HeaderComponent implements OnInit {
     if (!target.closest('.dropdown')) {
       this.isDropdownOpen = false;
     }
+  }
+
+  openContactModal(): void {
+    this.router.navigateByUrl('/Contact');
+    this.openContact = true;
+    this.contactModalStatus.emit(true);
   }
 }

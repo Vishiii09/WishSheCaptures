@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
 import { RoutingModule } from './routing/routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PhotoComponent } from './photo/photo.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FoodComponent,
     BlackWhiteComponent,
     ContactComponent,
+    PhotoComponent,
   ],
   imports: [BrowserModule, RoutingModule, ReactiveFormsModule, FormsModule],
   providers: [],
